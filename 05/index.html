@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+      <style>
+  .container {
+    width: 70px;
+    margin: 0 auto;
+  }
+  .form-row {
+    margin-bottom: 10px;
+  }
+  .fit-picture {
+    width: 150px;
+  }
+
+</style>
+  </head>
+  <body>
+    <img
+      class="fit-picture"
+      src="/assets/img/beetroot.png"
+      alt="Beetroot Academy"
+    >
+    <h2>Add Account</h2>
+    <div class="container">
+      <label for="name">Full name</label>
+      <input type="text" name="name" id="name" value="" size="13">
+      <label for="username">Email</label>
+      <input type="text" name="username" id="username" value="">
+      <label>Password</label>
+      <input type="password" name="pass" required size="10">
+      <label>Password again</label>
+      <input type="password" name="repass" required size="10">
+      <label> <input type="radio" name="gender" value="Male">Male </label>
+      <label> <input type="radio" name="gender" value="Female">Female </label>
+      <label
+        >Age
+        <input type="number" name="age" value="" size="1">
+      </label>
+      <span class="fake_lbl">Course</span>
+      <select name="Course" id="Course">
+        <option value="" selected disabled>Select value</option>
+        <optgroup label="Web course">
+          <option value="Front_end">Front-end</option>
+          <option value="Back_end">Back-end</option>
+          <option value="Python">Python</option>
+        </optgroup>
+      </select>
+      <label>
+        Add avatar
+        <input type="file" name="avatar">
+      </label>
+      <label>
+        <input type="checkbox" name="agree" value="agree">Agree with privacy
+        policy</label>
+      <button name="button">Submit</button>
+      <input type="reset" value="reset">
+    </div>
+  </body>
+</html>
